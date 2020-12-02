@@ -10,11 +10,11 @@
 
 - 필요한 XML 출력결과
 
-  - stateDt : 기준일 (20200302, 3월 2일부터 하루에 한번발표)
-  - decideCnt : 확진자 수
-  - examCnt : 검사자 수
-  - deatCnt : 사망자 수
-  - careCnt : 치료중인 환자 수 (초기 기간에는 없을 수 있음)
-  - clearCnt : 격리해제 인원 수 (초기 기간에는 없을 수 있음)
+  - statedt : 기준일 (20200302, 3월 2일부터 하루에 한번발표)
+  - decidecnt : 확진자 수
+  - examcnt : 검사자 수
+  - deathcnt : 사망자 수
+  - carecnt : 치료중인 환자 수 (초기 기간에는 없을 수 있음)
+  - clearcnt : 격리해제 인원 수 (초기 기간에는 없을 수 있음)
 
-  - totalCount : 전체 결과 일 수
+  - totalcount : 전체 결과 일 수
