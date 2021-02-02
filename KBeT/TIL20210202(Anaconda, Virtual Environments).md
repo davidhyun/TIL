@@ -14,7 +14,7 @@
 >
 > 머신러닝 프로젝트를 진행할 때는 `Python 버전관리`와 `패키지 충돌 방지`를 위해 프로젝트 별로 각각의 `독립된 가상환경`을 만들고 이 환경에서 개발하는 것이 좋다.
 
-
+<br/>
 
 ### (1) 가상환경이 필요한 이유?
 
@@ -24,7 +24,7 @@
 >
 > 이를 방지하기 위해서 프로젝트 단위로 가상환경을 구성하고 필요한 라이브러리르 설치해서 작업을 진행하면 훨씬 작업이 편해집니다. 또한, 다른 컴퓨터 혹은 다른 환경에서 동일 프로그램을 실행시킬 때, 작업 환경을 고정시켰기 때문에 해당 환경에 맞게 구성하면, 작업환경과 버전 문제로 실행되지 않는 문제를 방지할 수 있다.
 
-
+<br/>
 
 ### (2) Anaconda 기본명령어
 
@@ -63,7 +63,7 @@ conda install [패키지 이름]		# 현재 가상환경에서 패키지 설치
 conda uninstall [패키지 이름]	# 현재 가상환경에 설치된 패키지 삭제
 ```
 
-
+<br/>
 
 ### (3) Jupyter Notebook(Lab)에 가상환경 Kernel 연결
 
@@ -78,7 +78,7 @@ conda install ipykernel
 python -m ipykernel install --user --name [만들어진 가상환경 이름] --display-name [보여질 이름]
 ```
 
-
+<br/>
 
 ### (4) cmd Error
 
@@ -86,7 +86,7 @@ python -m ipykernel install --user --name [만들어진 가상환경 이름] --d
 
 > 파이썬과 아나콘다 설치 후 명령프롬프트에서 python 버전확인시 발생하는 오류
 
-
+<br/>
 
 ##### 원인
 
@@ -94,7 +94,7 @@ python -m ipykernel install --user --name [만들어진 가상환경 이름] --d
 >
 > 예를 들어, HTTP, SSL 에러도 OpenSSL 라이브러리를 찾지 못해서 오류가 발생하는 경우도 있다.
 
-
+<br/>
 
 ##### 해결방법1
 
@@ -102,7 +102,7 @@ python -m ipykernel install --user --name [만들어진 가상환경 이름] --d
 
 ![Anaconda Error Solution](https://user-images.githubusercontent.com/64063767/106536408-b9d2ae00-653b-11eb-8033-4d52e1afe2d1.png)
 
-
+<br/>
 
 ##### 해결방법2
 
