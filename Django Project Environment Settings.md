@@ -34,8 +34,8 @@ $ cd \Projects
 $ mkdir mysite # 프로젝트 이름
 $ cd \Projects\mysite
 
-$ django-admin startproject config . # 프로젝트 디렉토리와 환경설정 디렉토리 구분하여 관리
-$ python manage.py runserver # 장고 내장서버 구동 확인
+$ django-admin startproject config . 	# 프로젝트 디렉토리와 환경설정 디렉토리 구분하여 관리
+$ python manage.py runserver 			# 장고 내장서버 구동 확인
 ```
 
 <br/>
