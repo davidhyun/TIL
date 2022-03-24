@@ -1,5 +1,6 @@
 # CLI Command (MacOS)
 
+
 > CLI: **C**ommand **L**ine **I**nterface
 >
 > GUI: **G**raphic **U**ser **I**nterface
@@ -41,7 +42,7 @@
 ## Network Config Command
 
 | command                          | Description                                                  |
-| -------------------------------- | :----------------------------------------------------------- |
+| -------------------------------- | ------------------------------------------------------------ |
 | `ifconfig`                       | 네트워크 설정 정보 확인                                      |
 | `route -n get default`           | 기본게이트웨이 주소 확인                                     |
 | `nslookup server`                | 등록된 DNS 서버주소 확인                                     |
