@@ -14,7 +14,6 @@ $ grep "record\[[0-9]*\]\[name\]" thekie.com
 ### 행 삭제
 
 ```bash
-# <mark> <buffer-name> <go-to-endline> <operation> <go-to-marker> <buffer-name>
 # command mode
 # <mark> <buffer-name> <go-to-endline> <operation> <go-to-marker> <buffer-name>
 m a :$ d ' a
