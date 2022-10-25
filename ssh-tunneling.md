@@ -46,4 +46,7 @@ $ ssh -L 8585:127.0.0.1:80 suser@192.168.1.201
 # At SSH Server (ex. 192.168.1.201)
 $ ssh -R <Client Listening Port>:<Destination IP>:<Destination Port> <Client User>@<Client IP> [-p ssh port]
 $ ssh -R 8585:127.0.0.1:80 cuser@192.168.1.200
+
+# 외부에서 직접 접근이 불가한 EHP 서비스(192.168.0.200:502)를 이용하기 위해 터널링. At EMS Server (192.168.0.101)
+$ ssh -R 123.143.163.20:9502:192.168.0.200:502 kbet@erp.kbet.or.kr -p XXXX
 ```
