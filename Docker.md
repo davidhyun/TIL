@@ -134,6 +134,19 @@ $ docker run -d -it --name <container-name> -v <volume-name>:<container-workdir>
 $ docker run -d -it --name <container-name> -v <host-workdir>:<container-workdir> <image-name>
 ```
 
+#### Copy Docker Volume To Another Host Machine
+
+- SSH를 이용하여 다른 호스트 서버에 도커 볼륨을 복사하는 방법
+
+```bash
+$ docker run --rm -v <SOURCE_DATA_VOLUME_NAME>:/from alpine ash -c \
+    "cd /from ; tar -cf - . " | \
+    ssh <TARGET_HOST> \
+    'docker run --rm -i -v <TARGET_DATA_VOLUME_NAME>:/to alpine ash -c "cd /to ; tar -xpvf - "'
+```
+
+
+
 ### 4.2 로컬 IDE 환경설정
 
 1. 로컬 VSCode의 settings.json에 아래 한줄 추가
