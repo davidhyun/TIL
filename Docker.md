@@ -139,10 +139,16 @@ $ docker run -d -it --name <container-name> -v <host-workdir>:<container-workdir
 - SSH를 이용하여 다른 호스트 서버에 도커 볼륨을 복사하는 방법
 
 ```bash
-$ docker run --rm -v <SOURCE_DATA_VOLUME_NAME>:/from alpine ash -c \
+#!/bin/bash
+
+VOL_SRC=$1
+VOL_DST=$2
+TARGET_HOST=$3
+
+docker run --name cp-vol --rm -v ${VOL_SRC}:/from alpine ash -c \
     "cd /from ; tar -cf - . " | \
-    ssh <TARGET_HOST> \
-    'docker run --rm -i -v <TARGET_DATA_VOLUME_NAME>:/to alpine ash -c "cd /to ; tar -xpvf - "'
+    ssh ${TARGET_HOST} \
+    "docker run --rm -i -v ${VOL_DST}:/to alpine ash -c 'cd /to ; tar -xpvf - '"
 ```
 
 
